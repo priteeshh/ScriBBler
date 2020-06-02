@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.leftHeaderContainer{
+    height: 100%;
+    width: 50%;
+    margin: 0;
+}
+.rightHeaderContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.headerButton{
+    height: 30px;
+    margin: 1%;
+    background-color: blue;
+    color: white;
+    border: 0;
+}
+#mainHeading{
+    font-family: 'Montez', cursive; 
+    font-size: 35px;
+    margin: 0;
+    color: blue;
+}
+#subHeading{
+    font-family: 'Ubuntu Mono';
+    margin: 0;
+}
