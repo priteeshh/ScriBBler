@@ -2,12 +2,83 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+<title>Home</title>
+<link rel="stylesheet" type="text/css" media="screen" href="./styles/index.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="./styles/common.css" />
+<link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- TODO: Include all your code for the header and home page here -->
+    <div></div>
+    <div class="header" class="modal">
+          <div class="leftHeaderContainer">
+            <p id="mainHeading">ScriBBler</p>
+            <p id="subHeading">Explore, Imagine, Create</p>
+          </div>
+          <div class="rightHeaderContainer">
+            <button class="headerButton" onclick="signUpButtonTapped()">Sign up</button>
+            <button class="headerButton" onclick="signInButtonTapped()">Sign In</button>
+          </div>
+    </div>
+    <div class="container">
+        <button class="postButton" onclick="location.href='./html/postslist.html'">All Posts</button>
+        <button class="postButton" onclick="createPostButtonTapped()">Create Posts</button>
+      </div>
+    <div id="modal-signUp" class="modal-form">
+        <div class="modal-contentForm">
+            <div id="signUpForm">
+                <div id="getStatred">
+                    <span>Get Started</span>
+                    <span><i onclick="signUPCloseTapped()" class="fa fa-times" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="line"></div>
+                    <label for="name" class="label-text">Name</label>
+                    <input type="text" id="email" placeholder="Enter your name" required>
+                    <label for="username" class="label-text">UserName</label>
+                    <input type="text" id="email" placeholder="Enter your username" required>
+                    <label for="password" class="label-text">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <label for="Confirmpassword" class="label-text">Confirm Password</label>
+                    <input type="password" id="password" placeholder="Re-enter your password" required>
+                    <button id="signupbtn">Sign Up</button>
+            </div>
+        
+        </div>
+      </div>
+    <div id="modal-signIn" class="modal-form">
+        <div class="modal-contentForm">
+          <div id="signInForm">
+            <div id="getStatred">
+                <span>Welcome Back!</span>
+                <span><i onclick="signInCloseTapped()" class="fa fa-times" aria-hidden="true"></i></span>
+              </div>
+              <div class="line"></div>
+                <label for="username" class="label-text">UserName</label>
+                <input type="text" placeholder="Enter your username" required>
+                <label for="password" class="label-text">Password</label>
+                <input type="password" placeholder="Enter your password" required>
+                <button id="signupbtn">Sign In</button>
+                <div id="notAMember"><span id="notAMemberText">Not a member? </span><span onclick="signUphyperLinkTapped()" id="signUphyperLink"> Sign Up</span></div>
+        </div>
+        </div>
+    </div>
+    <div id="modal-createPost" class="modal-form">
+      <div class="modal-contentFormforPost">
+        <div id="createPostForm">
+          <div id="getStatred">
+              <span>Pen Your Post</span>
+              <span><i onclick="createPostCloseTapped()" class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <div class="line"></div>
+              <label for="Title" class="label-text">Title</label>
+              <input type="text" placeholder="Enter title of your post" required>
+              <label for="Contents" class="label-text">Contents</label>
+              <textarea name="content" id="" cols="30" rows="10" placeholder="Enter the contents of your post"></textarea>
+              <button id="createBtn">Create</button>
+      </div>
+      </div>
+      <script src="./scripts/index.js"></script>
+      <script src="https://kit.fontawesome.com/41ab127f8a.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
