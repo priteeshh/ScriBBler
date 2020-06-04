@@ -71,7 +71,7 @@
                 <div class="postTitleContainer">
                     <p class="postTitle">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
                     <span>
-                        <i class="fas fa-trash"></i>
+                        <i onclick="onDeleteTapped()" class="fas fa-trash"></i>
                     </span>
                 </div>
                 <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
@@ -92,7 +92,7 @@
                 <div class="postTitleContainer">
                     <p class="postTitle">What is linting and how can it save you time?</p>
                     <span>
-                        <i class="fas fa-trash"></i>
+                        <i onclick="onDeleteTapped()" class="fas fa-trash"></i>
                     </span>
                 </div>
                 <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
@@ -113,7 +113,7 @@
                 <div class="postTitleContainer">
                     <p class="postTitle">How to Get More Views on Your Tech Blog</p>
                     <span>
-                        <i class="fas fa-trash"></i>
+                        <i onclick="onDeleteTapped()" class="fas fa-trash"></i>
                     </span>
                 </div>
                 <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
@@ -134,7 +134,7 @@
                 <div class="postTitleContainer">
                     <p class="postTitle">How to write easily describable code</p>
                     <span>
-                        <i class="fas fa-trash"></i>
+                        <i onclick="onDeleteTapped()" class="fas fa-trash"></i>
                     </span>
                 </div>
                 <p>When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
@@ -156,7 +156,7 @@
                 <div class="postTitleContainer">
                     <p class="postTitle">Everything you should know about ‘module’ & ‘require’ in Node.js </p>
                     <span>
-                        <i class="fas fa-trash"></i>
+                        <i onclick="onDeleteTapped()" class="fas fa-trash"></i>
                     </span>
                 </div>
                 <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
@@ -168,10 +168,19 @@
         </div>
         <!-- post 5 ends here -->
 
-        <!-- TODO: Write code for delete post modal here -->
+        <div id="modal-delete" class="modal-form">
+            <div class="deleteForm">
+                    <p>Are you sure want to delete this post?</p>
+                    <div id="deleteBtns">
+                        <button id="yesBtn">Yes</button>
+                        <button onclick="noBtnTapped()" id="noBtn">No</button>
+                    </div>
+            </div>
+        </div>
 
     </div>
-    <script src="../scripts/index.js"></script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/postslist.js"></script>
     <script src="https://kit.fontawesome.com/41ab127f8a.js" crossorigin="anonymous"></script>
 </body>
 
