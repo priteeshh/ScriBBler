@@ -4,6 +4,7 @@
 <head>
     <title>Posts</title>
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/common.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/post.css" />
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
@@ -55,11 +56,41 @@
             <button id="signupbtn">Sign In</button>
             <div id="notAMember"><span id="notAMemberText">Not a member? </span><span onclick="signUphyperLinkTapped()" id="signUphyperLink"> Sign Up</span></div>
     </div>
+    </div>  
+</div>
+<div id="container">
+  <div id="title">
+    <!-- <input  id="contectTextArea" class="contectTextArea">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</textarea> -->
+    <input class="contectTextArea"  id="contectTextArea"type="text" value="One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.">
+    <label class="contectLabel" id="contectLabel">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</label>
+    <!-- <p id="title-para">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p> -->
+  </div>
+  <div id="subHeaderContainer">
+    <p>
+      Preeteesh
+    </p>
+    <button class="postButton" id="editSave" value="edit" onclick="editSaveButton()">Edit<i id="editIcon" class="fas fa-edit"></i></button>
+  </div>
+  <div id="content">
+    <textarea  class="contectTextArea">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure</textarea>
+    <label class="contectLabel">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure</label>
+  </div>
+  <div id="likeContiner">
+    <button class="postButton">Like</button>
+    <P>1 person like this</P>
+    </div>
+
+    <div id="commentsContainer">
+      <textarea name="" id="" cols="20" rows="5"></textarea>
+      <button class="postButton">Comment</button>
+      <p>All Comments</p>
     </div>
 </div>
- 
+
+
     </div>
     <script src="../scripts/common.js"></script>
+    <script src="../scripts/post.js"></script>
     <script src="https://kit.fontawesome.com/41ab127f8a.js" crossorigin="anonymous"></script>
 </body>
 

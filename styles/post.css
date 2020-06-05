@@ -1,0 +1,70 @@
+#title{
+    width: 100%;
+    text-align: center;
+
+
+}
+#title-para{
+    font-weight: bolder;
+}
+#container{
+    padding: 25px;
+}
+#subHeaderContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Ubuntu Mono';
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+#content{
+    display: flex;
+    flex-direction: column;
+
+}
+.contectTextArea{
+    background-color: white;
+    padding: 0;
+    font-size: 15px;
+    width: 100%;
+    height: 200px;
+    border: 1px;
+    border-style: solid;
+    border-color: #EA2A56;
+    
+
+}
+.contectTextArea:focus{
+    outline: none !important;
+
+}
+#contectTextArea{
+    height: 20px;
+    text-align:  center;
+    font-weight: bolder;
+
+}
+#contectLabel{
+    height: 15px;
+    text-align:  center;
+    font-weight: bolder;
+}
+.contectLabel{
+    font-size: 15px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#likeContiner{
+    margin-top: 10px;
+}
+.postButton{
+    background-color: #EA2A56;
+    margin: 0;
+    color: white;
+}
+#editIcon{
+    margin-left: 5px;
+}
