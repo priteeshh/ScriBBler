@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <!-- Header Section -->
     <div class="header" class="modal">
         <div class="leftHeaderContainer">
           <p id="mainHeading">ScriBBler</p>
@@ -20,6 +21,7 @@
           <button class="headerButton" onclick="signInButtonTapped()">Sign In</button>
         </div>
   </div>
+  <!-- Sign Up Modal -->
   <div id="modal-signUp" class="modal-form">
     <div class="modal-contentForm">
         <div id="signUpForm">
@@ -43,6 +45,7 @@
     
     </div>
   </div>
+  <!-- Sign In Modal -->
   <div id="modal-signIn" class="modal-form">
     <div class="modal-contentForm">
       <div id="signInForm">
@@ -62,26 +65,31 @@
     </div>
     </div>  
 </div>
+<!-- Main Body Section-->
 <div id="container">
+  <!-- Title Section -->
   <div id="title">
     <input class="contectTextArea"  id="contectTextArea"type="text" value="One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.">
     <label class="contectLabel" id="contectLabel">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</label>
   </div>
+  <!-- Name and Edit/Save Button section -->
   <div id="subHeaderContainer">
     <p id="name">
       Preeteesh
     </p>
     <button class="postButton" id="editSave" value="edit" onclick="editSaveButton()">Edit<i id="editIcon" class="fas fa-edit"></i></button>
   </div>
+  <!-- Description Section -->
   <div id="content">
     <textarea  class="contectTextArea">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure</textarea>
     <label class="contectLabel">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure</label>
   </div>
+  <!-- Like Section -->
   <div id="likeContiner">
     <button class="postButton" id="likeButton" onclick="likeButtinTapped()">Like <i class="fas fa-thumbs-up"></i></button>
     <P id="like-para">Be the first one to like this</P>
     </div>
-
+<!-- Comment Section  -->
     <div id="commentsContainer">
       <textarea name="" id="commentsArea" cols="20" rows="5" placeholder="Leave a comment..."></textarea>
       <button class="postButton" onclick="addCommentTapped()">Comment</button>
