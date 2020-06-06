@@ -26,3 +26,10 @@ function editSaveButton(){
 
     }
 }
+var likes = 0;
+function likeButtinTapped(){
+    likes++;
+    if (likes > 0){
+        document.getElementById("like-para").innerHTML = likes+' person likes this!'
+    }
+}
