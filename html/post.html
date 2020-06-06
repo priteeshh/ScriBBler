@@ -60,10 +60,8 @@
 </div>
 <div id="container">
   <div id="title">
-    <!-- <input  id="contectTextArea" class="contectTextArea">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</textarea> -->
     <input class="contectTextArea"  id="contectTextArea"type="text" value="One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.">
     <label class="contectLabel" id="contectLabel">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</label>
-    <!-- <p id="title-para">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p> -->
   </div>
   <div id="subHeaderContainer">
     <p>
@@ -81,9 +79,12 @@
     </div>
 
     <div id="commentsContainer">
-      <textarea name="" id="" cols="20" rows="5"></textarea>
-      <button class="postButton">Comment</button>
+      <textarea name="" id="commentsArea" cols="20" rows="5" placeholder="Leave a comment..."></textarea>
+      <button class="postButton" onclick="addCommentTapped()">Comment</button>
       <p>All Comments</p>
+      <div id="allComments">
+
+      </div>
     </div>
 </div>
 

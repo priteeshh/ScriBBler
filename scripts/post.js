@@ -33,3 +33,9 @@ function likeButtinTapped(){
         document.getElementById("like-para").innerHTML = likes+' person likes this!'
     }
 }
+function addCommentTapped(){
+    var comment = document.getElementById("commentsArea").value;
+    var existingComments = document.getElementById("allComments").innerHTML
+    document.getElementById("allComments").innerHTML = '<p id="comment">'+comment+'</p>'+existingComments;
+    document.getElementById("commentsArea").value = ""
+}

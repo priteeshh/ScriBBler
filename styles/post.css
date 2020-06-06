@@ -68,3 +68,21 @@
 #editIcon{
     margin-left: 5px;
 }
+#commentsContainer{
+    width: 60%;
+}
+#commentsArea{
+    background-color: white;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+#allComments{
+    background-color: grey;
+    padding: 10px;
+}
+#comment{
+    height: 40px;
+    background-color: white;
+    padding: 5px;
+}
