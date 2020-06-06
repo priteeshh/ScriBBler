@@ -28,15 +28,17 @@
                 <span><i onclick="signUPCloseTapped()" class="fa fa-times" aria-hidden="true"></i></span>
               </div>
               <div class="line"></div>
+              <form action="">
                 <label for="name" class="label-text">Name</label>
-                <input type="text" id="email" placeholder="Enter your name" required>
+                <input type="text" id="email" placeholder="Enter your name" required oninvalid='"Please fill out this field."'>
                 <label for="username" class="label-text">UserName</label>
-                <input type="text" id="email" placeholder="Enter your username" required>
+                <input type="text" id="email" placeholder="Enter your username" required oninvalid='"Please fill out this field."'>
                 <label for="password" class="label-text">Password</label>
-                <input type="password" id="password" placeholder="Enter your password" required>
+                <input type="password" id="password" placeholder="Enter your password" required oninvalid='"Please fill out this field."'>
                 <label for="Confirmpassword" class="label-text">Confirm Password</label>
-                <input type="password" id="password" placeholder="Re-enter your password" required>
+                <input type="password" id="password" placeholder="Re-enter your password" required oninvalid='"Please fill out this field."'>
                 <button id="signupbtn">Sign Up</button>
+              </form>
         </div>
     
     </div>
@@ -49,11 +51,13 @@
             <span><i onclick="signInCloseTapped()" class="fa fa-times" aria-hidden="true"></i></span>
           </div>
           <div class="line"></div>
+          <form action="">
             <label for="username" class="label-text">UserName</label>
-            <input type="text" placeholder="Enter your username" required>
+            <input type="text" placeholder="Enter your username" required oninvalid='"Please fill out this field."'>
             <label for="password" class="label-text">Password</label>
-            <input type="password" placeholder="Enter your password" required>
+            <input type="password" placeholder="Enter your password" required oninvalid='"Please fill out this field."'>
             <button id="signupbtn">Sign In</button>
+          </form>
             <div id="notAMember"><span id="notAMemberText">Not a member? </span><span onclick="signUphyperLinkTapped()" id="signUphyperLink"> Sign Up</span></div>
     </div>
     </div>
@@ -76,7 +80,7 @@
                 </div>
                 <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
                 <span class="dots">
-                    <i onclick="location.href='../html/post.html'" class="fas fa-ellipsis-h"></i>
+                    <i onclick="detailsBtnTapped('Srishti Gupta','‘let’ me be a ‘const’(ant), not a ‘var’(iable)!')" class="fas fa-ellipsis-h"></i>
                 </span>
             </div>
         </div>
@@ -97,7 +101,7 @@
                 </div>
                 <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
                 <span class="dots">
-                    <i onclick="location.href='../html/post.html'" class="fas fa-ellipsis-h"></i>
+                    <i onclick="detailsBtnTapped('Colby Fayock','What is linting and how can it save you time?')" class="fas fa-ellipsis-h"></i>
                 </span>
             </div>
         </div>
@@ -118,7 +122,7 @@
                 </div>
                 <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
                 <span class="dots">
-                    <i onclick="location.href='../html/post.html'" class="fas fa-ellipsis-h"></i>
+                    <i onclick="detailsBtnTapped('Yazeed Bzadough','How to Get More Views on Your Tech Blog')" class="fas fa-ellipsis-h"></i>
                 </span>
             </div>
         </div>
@@ -140,7 +144,7 @@
                 <p>When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
                     leads to confusion when discussing the code.</p>
                 <span class="dots">
-                    <i onclick="location.href='../html/post.html'" class="fas fa-ellipsis-h"></i>
+                    <i onclick="detailsBtnTapped('Cedd Burge','How to write easily describable code')" class="fas fa-ellipsis-h"></i>
                 </span>
             </div>
         </div>
@@ -162,7 +166,7 @@
                 <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
                     named xyz.</p>
                 <span class="dots">
-                    <i onclick="location.href='../html/post.html'" class="fas fa-ellipsis-h"></i>
+                    <i onclick="detailsBtnTapped('Srishti Gupta','Everything you should know about ‘module’ & ‘require’ in Node.js')" class="fas fa-ellipsis-h"></i>
                 </span>
             </div>
         </div>

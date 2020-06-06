@@ -1,5 +1,10 @@
 document.getElementsByClassName("contectTextArea")[0].style.display = "none"
 document.getElementsByClassName("contectTextArea")[1].style.display = "none"
+document.getElementById("name").innerHTML = localStorage.getItem("name")
+document.getElementById("contectTextArea").value = localStorage.getItem("title")
+document.getElementById("contectLabel").innerHTML = localStorage.getItem("title")
+document.getElementById("allComments").style.display = "none"
+
 function editSaveButton(){
     var btn = document.getElementById("editSave")
     if( btn.value == "edit"){
@@ -34,6 +39,7 @@ function likeButtinTapped(){
     }
 }
 function addCommentTapped(){
+    document.getElementById("allComments").style.display = ""
     var comment = document.getElementById("commentsArea").value;
     var existingComments = document.getElementById("allComments").innerHTML
     document.getElementById("allComments").innerHTML = '<p id="comment">'+comment+'</p>'+existingComments;
