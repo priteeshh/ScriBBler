@@ -33,6 +33,7 @@ function editSaveButton(){
 }
 var likes = 0;
 function likeButtinTapped(){
+    document.getElementById("likeButton").innerHTML = "Liked! "+ '<i class="fas fa-thumbs-up"></i>'
     likes++;
     if (likes > 0){
         document.getElementById("like-para").innerHTML = likes+' person likes this!'
