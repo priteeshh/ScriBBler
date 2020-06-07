@@ -5,6 +5,7 @@ document.getElementById("contectTextArea").value = localStorage.getItem("title")
 document.getElementById("contectLabel").innerHTML = localStorage.getItem("title")
 document.getElementById("allComments").style.display = "none"
 
+// Save and Edit Function
 function editSaveButton(){
     var btn = document.getElementById("editSave")
     if( btn.value == "edit"){
@@ -31,6 +32,7 @@ function editSaveButton(){
 
     }
 }
+// Like Functionality
 var likes = 0;
 function likeButtinTapped(){
     document.getElementById("likeButton").innerHTML = "Liked! "+ '<i class="fas fa-thumbs-up"></i>'
@@ -39,6 +41,7 @@ function likeButtinTapped(){
         document.getElementById("like-para").innerHTML = likes+' person likes this!'
     }
 }
+// Add comments Function
 function addCommentTapped(){
     document.getElementById("allComments").style.display = ""
     var comment = document.getElementById("commentsArea").value;

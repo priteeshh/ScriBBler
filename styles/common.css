@@ -72,7 +72,7 @@
     padding: 2%;
     font-size: small;
     margin-bottom: 15px;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 textarea{
     width: 96%;
@@ -115,7 +115,7 @@ label {
     width: 100%;
     border: 0;
     height: 30px;
-    margin-top: 15px;
+    margin-top: 5px;
     color: white;
 }
 #getStatred{
