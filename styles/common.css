@@ -20,6 +20,7 @@
     background-color: blue;
     color: white;
     border: 0;
+    cursor: pointer;
 }
 #mainHeading{
     font-family: 'Montez', cursive; 
@@ -30,14 +31,6 @@
 #subHeading{
     font-family: 'Ubuntu Mono';
     margin: 0;
-}
-.postButton{
-    height: 30px;
-    margin: 1%;
-    background-color: orange;
-    color: black;
-    border: 0;
-
 }
 
 .modal-form {
@@ -117,6 +110,7 @@ label {
     height: 30px;
     margin-top: 5px;
     color: white;
+    cursor: pointer;
 }
 #getStatred{
     font-family: Arial, Helvetica, sans-serif;

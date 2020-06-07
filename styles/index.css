@@ -35,4 +35,13 @@ body  {
       margin-top: 15px;
       height: 30px;
       color: white;
+      cursor: pointer;
   }
+  .postButton{
+    height: 30px;
+    margin: 1%;
+    background-color: orange;
+    color: black;
+    border: 0;
+    cursor: pointer;
+}
